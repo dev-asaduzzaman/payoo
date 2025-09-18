@@ -6,82 +6,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payoo</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>     
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="bg-[#F4F5F7] h-[100vh] flex items-center justify-center flex-col">
-    <div class=" bg-white min-h-[50px] w-[450px] mx-auto  rounded-b-lg">
-        <header class=" flex justify-between items-center px-5 py-3 border-b border-gray-300">
-            <div class="logo-part flex items-center gap-3">
-                <img class="w-[50px]" src="Group.png" alt="logo" id="Logo">
-                <div class="header-content flex flex-col">
-                    <h2 class="font-bold text-xl">$ <span>45000</span></h2>
-                    <p class="text-[#08080880]">Available Balance</p>
+    <div class="main bg-[#F4F5F7] pb-5 w-[450px] rounded-lg shadow-lg ">
+        <div class=" bg-white min-h-[50px] w-[450px] mx-auto  rounded-b-lg">
+            <header class=" flex justify-between items-center px-5 py-3 border-b border-gray-300">
+                <div class="logo-part flex items-center gap-3">
+                    <img class="w-[50px]" src="Group.png" alt="logo" id="Logo">
+                    <div class="header-content flex flex-col">
+                        <h2 class="font-bold text-xl">$ <span id="balance">45000</span></h2>
+                        <p class="text-[#08080880]">Available Balance</p>
+                    </div>
+                </div>
+                <div class="log-out-button">
+                    <button id="log-out" type="button" class="btn text-[#08080880]"> <i
+                            class="fa-solid fa-arrow-right-from-bracket"></i> Log Out</button>
+                </div>
+
+
+            </header>
+            <div class="Welcome p-5 bg-white rounded-b-2xl">
+                <div class="Welcome-content">
+                    <h1 class="font-bold text-xl">🔥 Welcome to Payooo!</h1>
+                    <p class="text-[#08080880] mt-2">Enjoy easy and convenient financial services with us. Cashout
+                        charge is
+                        low and </p>
+                </div>
+                <div class="features grid grid-cols-3 gap-4 mt-5">
+                    <div class="first-features flex flex-col items-centr justify-center text-center  border-1 border-gray-200 rounded-lg mt-5"
+                        id="add-money">
+                        <img class="mx-auto " src="wallet 1.svg" alt="">
+                        <h2 class=" text-sm mt-2">Add Money</h2>
+                    </div>
+
+                    <div
+                        class="first-features flex flex-col items-centr justify-center text-center px-6 py-3 border border-blue-400 rounded-lg mt-5 bg-[#F4F9FF] hover:bg-blue-100 active:bg-blue-200 transition duration-200">
+                        <img class="mx-auto " src="send 1.svg" alt="">
+                        <h2 class=" text-sm mt-2">Cashout</h2>
+                    </div>
+
+                    <div
+                        class="first-features flex flex-col items-centr justify-center text-center  border-1 border-gray-200 rounded-lg mt-5">
+                        <img class="mx-auto " src="money 1.svg" alt="">
+                        <h2 class=" text-sm mt-2">Transfer Money</h2>
+                    </div>
+
+                    <div
+                        class="first-features flex flex-col items-centr justify-center text-center px-6 py-3  border-1 border-gray-200 rounded-lg ">
+                        <img class="mx-auto " src="financial 1.svg" alt="">
+                        <h2 class=" text-sm mt-2">Get Bonus</h2>
+                    </div>
+
+                    <div
+                        class="first-features flex flex-col items-centr justify-center text-center  border-1 border-gray-200 rounded-lg ">
+                        <img class="mx-auto " src="purse 1.svg" alt="">
+                        <h2 class=" text-sm mt-2">Pay Bill</h2>
+                    </div>
+
+                    <div
+                        class="first-features flex flex-col items-centr justify-center text-center  border-1 border-gray-200 rounded-lg ">
+                        <img class="mx-auto " src="transaction 1.svg" alt="">
+                        <h2 class=" text-sm mt-2">Transactions</h2>
+                    </div>
                 </div>
             </div>
-            <div class="log-out-button">
-                <button id="log-out" type="button" class="btn text-[#08080880]" > <i
-                    class="fa-solid fa-arrow-right-from-bracket"></i> Log Out</button>
+        </div>
+        <div class="latest-payment flex flex-col justify-center px-5 mt-5 ">
+            <div class="latest-info  ">
+                <h1 class="font-bold text-xl  text-left">Add Money</h1>
             </div>
-            
-
-        </header>
-        <div class="Welcome p-5 bg-white rounded-b-2xl">
-            <div class="Welcome-content">
-                <h1 class="font-bold text-xl">🔥 Welcome to Payooo!</h1>
-                <p class="text-[#08080880] mt-2">Enjoy easy and convenient financial services with us. Cashout charge is
-                    low and </p>
-            </div>
-            <div class="features grid grid-cols-3 gap-4 mt-5">
-                <div
-                    class="first-features flex flex-col items-centr justify-center text-center px-6 py-3 border border-blue-400 rounded-lg mt-5 bg-[#F4F9FF] hover:bg-blue-100 active:bg-blue-200 transition duration-200" id="add-money">
-                    <img class="mx-auto " src="wallet 1.svg" alt="">
-                    <h2 class=" text-sm mt-2">Add Money</h2>
+            <form class="bg-white mt-5 p-5 rounded-2xl shadow-lg w-full">
+                <div class="bank ">
+                    <label for="bank" class="font-semibold">Select A Bank</label>
+                    <br>
+                    <select class="select bg-[#F4F5F7] rounded-3xl mt-2 w-full" id="bank">
+                        <option selected disabled>Select A Bank</option>
+                        <option>IFIC</option>
+                        <option>SBC</option>
+                        <option>NRBC</option>
+                    </select>
+                </div>
+                <div class="account-number mt-4">
+                    <label for="pin" class="font-semibold">Bank Account Number</label>
+                    <br>
+                    <input type="text" placeholder="Enter 11 digit account number" id="account-number"
+                        class="input bg-[#F4F5F7] rounded-3xl mt-2 w-full" />
                 </div>
 
-                <div
-                    class="first-features flex flex-col items-centr justify-center text-center  border-1 border-gray-200 rounded-lg mt-5">
-                    <img class="mx-auto " src="send 1.svg" alt="">
-                    <h2 class=" text-sm mt-2">Cashout</h2>
+                <div class="amount mt-4">
+                    <label for="pin" class="font-semibold">Amount to Add</label>
+                    <br>
+                    <input type="text" placeholder="Add Amount to withdraw" id="amount"
+                        class="input bg-[#F4F5F7] rounded-3xl mt-2 w-full" />
                 </div>
 
-                <div
-                    class="first-features flex flex-col items-centr justify-center text-center  border-1 border-gray-200 rounded-lg mt-5">
-                    <img class="mx-auto " src="money 1.svg" alt="">
-                    <h2 class=" text-sm mt-2">Transfer Money</h2>
+                <div class="pin-number mt-4">
+                    <label for="pin" class="font-semibold">Pin Number</label>
+                    <br>
+                    <input type="password" placeholder="Enter 4 digit pin number" id="pin"
+                        class="input bg-[#F4F5F7] rounded-3xl mt-2 w-full" />
                 </div>
-
-                <div
-                    class="first-features flex flex-col items-centr justify-center text-center px-6 py-3  border-1 border-gray-200 rounded-lg ">
-                    <img class="mx-auto " src="financial 1.svg" alt="">
-                    <h2 class=" text-sm mt-2">Get Bonus</h2>
-                </div>
-
-                <div
-                    class="first-features flex flex-col items-centr justify-center text-center  border-1 border-gray-200 rounded-lg ">
-                    <img class="mx-auto " src="purse 1.svg" alt="">
-                    <h2 class=" text-sm mt-2">Pay Bill</h2>
-                </div>
-
-                <div
-                    class="first-features flex flex-col items-centr justify-center text-center  border-1 border-gray-200 rounded-lg ">
-                    <img class="mx-auto " src="transaction 1.svg" alt="">
-                    <h2 class=" text-sm mt-2">Transactions</h2>
-                </div>
-            </div>
+                <br>
+                <button type="button" id="add-money-btn"
+                    class="btn btn-active bg-[#0874F2] text-white  w-full rounded-3xl">Add Money</button>
+            </form>
         </div>
     </div>
 
     <script>
-         document.getElementById("log-out").addEventListener("click", function () {
-            window.location.href = "index.html";
-        });
-       document.getElementById("Logo").addEventListener("click", function() {
+       document.getElementById("log-out").addEventListener("click", function () {
+    window.location.href = "index.html";
+});
+
+document.getElementById("Logo").addEventListener("click", function () {
     window.location.href = "home.html"; // your redirect page
-  });
+});
+
+document.getElementById("add-money-btn").addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const banks = document.getElementById("bank").value;
+    const accountNumbers = document.getElementById("account-number").value;
+    const amounts = parseInt(document.getElementById("amount").value);
+    const pins = document.getElementById("pin").value;
+    // ✅ PIN check
+    if (pins === "1234") {
+        const balance = parseInt(document.getElementById("balance").innerText);
+        const newBalance = balance + amounts;
+        document.getElementById("balance").innerText = newBalance;
+
+        alert("✅ Transaction successful!");
+    } else {
+        alert("❌ Invalid PIN. Please try again.");
+    }
+});
+
     </script>
 </body>
 

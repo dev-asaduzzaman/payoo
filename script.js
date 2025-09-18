@@ -14,8 +14,5 @@ document.getElementById("login-btn").addEventListener("click", function () {
     }
 });
 
-// HOME PAGE JS
-document.getElementById("log-out").addEventListener("click", function () {
-  console.log("Log Out")
-});
+
  
