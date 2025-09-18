@@ -13,4 +13,9 @@ document.getElementById("login-btn").addEventListener("click", function () {
         alert("Invalid Credentials");
     }
 });
+
+// HOME PAGE JS
+document.getElementById("log-out").addEventListener("click", function () {
+  console.log("Log Out")
+});
  
